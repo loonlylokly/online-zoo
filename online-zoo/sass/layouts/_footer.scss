@@ -11,7 +11,7 @@
     grid-template-columns: 1.8fr 30.9375vw 2.2fr;
     align-items: flex-end;
     justify-content: center;
-    padding-top: 30px;
+    padding-top: 25px;
     margin: 0;
     padding-bottom: 50px;
 }
@@ -70,7 +70,7 @@
     display: flex;
     list-style-type: none;
     margin: 0;
-    padding: 0 0 0 3.3vw;
+    padding: 0 0 0 3.4vw;
 }
 
 .footer__navbar-menu__link {
@@ -189,6 +189,10 @@
     padding-right: 12px;
 }
 
+.footer__designe-wrap > p {
+    padding-top: 10px;
+}
+
 
 @media (max-width: 1000px) {
     .footer__navbar-menu {
@@ -238,7 +242,6 @@
         margin: 0;
         display: flex;
         align-content: space-between;
-        // padding: 10px 0 10px 0;
     }
 
     .footer__social ul li a img {
@@ -288,7 +291,7 @@
     }
 
     .footer__logo-link {
-        content: url(../assets/images/logo2.png);
+        content: url(../../assets/images/logo2.png);
     }
 
     .footer__donate {
@@ -314,7 +317,7 @@
     }
 
     .footer__designe-wrap > p {
-        padding-bottom: 10px;
+        padding: 0 0 10px 0;
         font-size: 1.5rem;
     }
 }
