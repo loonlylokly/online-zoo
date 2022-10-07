@@ -45,6 +45,10 @@ body {
   color: var(--black-blue);
 }
 
+main {
+  overflow: hidden;
+}
+
 h1 {
   display: none;
   font-weight: 700;
@@ -205,7 +209,7 @@ p {
 .layout-3-rows-3-columns {
   display: grid;
   grid-template-areas: "logo subscribe subscribe" "button subscribe subscribe" "social navigation designed";
-  grid-template-rows: 1fr 86px 180px;
+  grid-template-rows: 1fr 90px 176px;
   grid-template-columns: 1.8fr 30.9375vw 2.2fr;
   align-items: flex-end;
   justify-content: center;
@@ -220,7 +224,7 @@ p {
   grid-column-end: logo;
   grid-row-start: logo;
   grid-row-end: logo;
-  padding-top: 10px;
+  padding-top: 15px;
 }
 
 .footer__submit {
@@ -267,7 +271,7 @@ p {
   display: flex;
   list-style-type: none;
   margin: 0;
-  padding: 0 0 0 3.4vw;
+  padding: 0 0 0 4.2vw;
 }
 
 .footer__navbar-menu__link {
@@ -394,11 +398,14 @@ p {
   .footer__navbar-menu {
     padding-left: 0vw;
   }
+  .footer__navbar-menu__link {
+    padding: 0 2.875vw;
+  }
   .footer__navbar-menu__link:first-of-type {
     padding: 0 1.875vw 0 0;
   }
   .layout-3-rows-3-columns {
-    grid-template-rows: 1fr 86px 180px;
+    grid-template-rows: 1fr 90px 176px;
     grid-template-columns: 1.8fr 36vw 1.9fr;
   }
   .footer__subscribe {
@@ -430,7 +437,7 @@ p {
     align-content: space-between;
   }
   .footer__social ul li a img {
-    padding-right: 0;
+    padding: 10px 0;
   }
   .footer__donate {
     height: 100%;
@@ -440,6 +447,9 @@ p {
   .footer__navbar-menu__link {
     list-style: none;
     padding: 0 3.2vw;
+  }
+  .footer__logo {
+    padding-top: 10px;
   }
 }
 @media (max-width: 590px) {
@@ -462,6 +472,9 @@ p {
     flex-direction: row;
     justify-content: space-around;
   }
+  .footer__social ul li a img {
+    padding: 0;
+  }
   .footer__logo {
     order: 1;
     padding-top: 20px;
@@ -480,12 +493,14 @@ p {
   }
   .footer__nav {
     order: 5;
-    padding-top: 20px;
+    padding-top: 16px;
     width: 100%;
   }
   .footer__navbar-menu {
     display: flex;
     justify-content: space-around;
+    padding-bottom: 10px;
+    padding-top: 0px;
   }
   .footer__designe-wrap > p {
     padding: 0 0 10px 0;
@@ -1209,7 +1224,7 @@ p.subtitle {
 .step__arrow-img {
   width: 69px;
   height: 35px;
-  content: url(../assets/images/arrow.png);
+  content: url(../../assets/images/arrow.png);
 }
 
 .step__card-text {
@@ -1261,6 +1276,12 @@ p.subtitle {
   }
 }
 @media (max-width: 960px) {
+  .animals-row__name {
+    font-size: 1.246rem;
+  }
+  .animals-row__native {
+    font-size: 1.169rem;
+  }
   .wrapper-pick-feed {
     margin: 0;
   }
@@ -1299,7 +1320,7 @@ p.subtitle {
     height: 29px;
     margin-top: -5px;
     z-index: 2;
-    content: url(../assets/images/arrow2.png);
+    content: url(../../assets/images/arrow2.png);
   }
 }
 @media (max-width: 590px) {

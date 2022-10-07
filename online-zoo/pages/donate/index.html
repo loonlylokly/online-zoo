@@ -46,18 +46,14 @@
                               <p class="panda__amount">4</p>
                               <p id="panda__text">Panda diet for the day.</p>
                             </div>
-                            <img class="x-icon" src="../../assets/images/x_icon.png" alt="x" />
-                            <img
-                              class="panda"
-                              src="../../assets/images/animals-widget.png"
-                              alt="panda"
-                            />
+                            <img class="x-icon" src="../../assets/images/x_icon.png" alt="x">
+                            <img class="panda" src="../../assets/images/animals-widget.png" alt="panda">
                         </div>
 
                         <p id="donate__p2">Amount</p>
                         <div class="selector">
                             <div class="selector__line"></div>
-                            <div class="selector__circle">
+                            <div class="selector__circle" id="select__1">
                                 <input type="radio" id="donate-amount-1" name="donate" class="selector__donate-amount">
                                 <div class="selector__circle-around-wrap">
                                     <div class="selector__circle-around-1"></div>
@@ -65,7 +61,7 @@
                                 </div>
                             </div>
 
-                            <div class="selector__circle">
+                            <div class="selector__circle" id="select__2">
                                 <input type="radio" id="donate-amount-2" name="donate" class="selector__donate-amount">
                                 <div class="selector__circle-around-wrap">
                                     <div class="selector__circle-around-1"></div>
@@ -73,7 +69,7 @@
                                 </div>
                             </div>
 
-                            <div class="selector__circle">
+                            <div class="selector__circle" id="select__3">
                                 <input type="radio" id="donate-amount-3" name="donate" class="selector__donate-amount">
                                 <div class="selector__circle-around-wrap">
                                     <div class="selector__circle-around-1"></div>
@@ -81,7 +77,7 @@
                                 </div>
                             </div>
 
-                            <div class="selector__circle">
+                            <div class="selector__circle" id="select__4">
                                 <input type="radio" id="donate-amount-4" name="donate" class="selector__donate-amount">
                                 <div class="selector__circle-around-wrap">
                                     <div class="selector__circle-around-1"></div>
@@ -123,16 +119,16 @@
                         </div>
 
                         <div class="selector-labels">
-                            <div class="selector-labels__money-wrap">
+                            <div class="selector-labels__money-wrap" id="select__1">
                                 <label class="selector-labels__money" for="donate-amount-1">$5000</label>
                             </div>
-                            <div class="selector-labels__money-wrap">
+                            <div class="selector-labels__money-wrap" id="select__2">
                                 <label class="selector-labels__money" for="donate-amount-2">$2000</label>
                             </div>
-                            <div class="selector-labels__money-wrap">
+                            <div class="selector-labels__money-wrap" id="select__3">
                                 <label class="selector-labels__money" for="donate-amount-3">$1000</label>
                             </div>
-                            <div class="selector-labels__money-wrap">
+                            <div class="selector-labels__money-wrap" id="select__4">
                                 <label class="selector-labels__money" for="donate-amount-4">$500</label>
                             </div>
                             <div class="selector-labels__money-wrap">
@@ -165,9 +161,9 @@
                                 <label for="radio-once">Once</label>
                               </div>
                             </div>
-                        </form>
 
-                        <button class="button_rounded button_donate">FEED A FRIEND NOW</button>
+                            <button class="button_rounded button_donate">FEED A FRIEND NOW</button>
+                        </form>
                         <p id="donate-p3">Share with your friends on social networks</p>
                     </div>
                 </div>

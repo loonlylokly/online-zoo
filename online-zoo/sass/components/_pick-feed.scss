@@ -84,7 +84,7 @@ p.subtitle {
 .step__arrow-img {
     width: 69px;
     height: 35px;
-    content: url(../assets/images/arrow.png);
+    content: url(../../assets/images/arrow.png);
 }
 
 .step__card-text {
@@ -144,6 +144,15 @@ p.subtitle {
 }
 
 @media (max-width: 960px) {
+
+    .animals-row__name {
+        font-size: 1.246rem;
+    }
+
+    .animals-row__native {
+        font-size: 1.169rem;
+    }
+
     .wrapper-pick-feed {
         margin: 0;
     }
@@ -191,7 +200,7 @@ p.subtitle {
         height: 29px;
         margin-top: -5px;
         z-index: 2;
-        content: url(../assets/images/arrow2.png);
+        content: url(../../assets/images/arrow2.png);
     }
 }
 

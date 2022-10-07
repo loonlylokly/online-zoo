@@ -58,6 +58,10 @@ body {
     color: var(--black-blue);
 }
 
+main {
+    overflow: hidden;
+}
+
 h1 {
     display: none;
     font-weight: 700;
