@@ -107,7 +107,8 @@
         display: initial;
         width: 159px;
         height: 484px;
-        right: 0;
+        right: -28px;
+        top: -7px;
     }
 
     .backstage__text {
@@ -143,6 +144,8 @@
         width: 32px;
         height: 218px;
         overflow: hidden;
+        right: 0;
+        top: 0;
     }
 
     .backstage__flower-img {

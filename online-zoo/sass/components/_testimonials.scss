@@ -161,7 +161,7 @@
 @media (max-width: 1000px) {
     .layout-4-rows {
         padding-top: 100px;
-        padding-bottom: 140px;
+        padding-bottom: 141px;
     }
 
     .layout-4-column {
@@ -172,7 +172,7 @@
     .testimonials__slider-border {
         width: 390px;
         height: 8px;
-        margin: 24px 0 51px 268px;
+        margin: 21px 0 51px 268px;
     }
 
     .testimonials__slider {
@@ -192,8 +192,7 @@
 
     .layout-4-column {
         flex-direction: column;
-        align-items: space-between;
-        margin-bottom: 25px;
+        margin-bottom: 27px;
     }
 
     .testimonials__card-border-wrap {
@@ -232,8 +231,8 @@
     .testimonials__leaf {
         width: 123px;
         height: 204px;
-        bottom: -69px;
-        right: 0;
+        bottom: -70px;
+        right: -7px;
     }
 }
 

@@ -263,6 +263,10 @@
     .animals-row__card__img {
         height: 29.1vw;
     }
+
+    .animals-row__name {
+        padding-top: 5px;
+    }
 }
 
 @media (max-width: 960px) {
@@ -297,9 +301,17 @@
         height: 44.2vw;
     }
 
+    .animals-row__ico {
+        padding-top: 0;
+        padding-right: 48px;
+    }
+
+    .animals-row__text {
+        padding-left: 10px;
+    }
     
     .button-choose {
-        margin-top: 60px;
+        margin-top: 62px;
     }
 
     .animals__palm {
@@ -360,7 +372,7 @@
     }
 
     .animals-row__card__img {
-        height: 89.0625vw;
+        height: 88.5vw;
     }
 
     .button-choose {
@@ -369,5 +381,15 @@
 
     .wrapper-animals {
         padding-bottom: 60px;
+    }
+
+    .animals-row__name {
+        padding-top: 0px;
+    }
+
+    .animals-row__ico img {
+        margin-left: 12px;
+        width: 27px;
+        height: 37px;
     }
 }

@@ -27,17 +27,9 @@
     color: #FE9013;
 }
 
-.pick-feed__text > p {
+.subtitle {
     margin: 0;
-    padding-top: 12px;
-    padding-left: 99px;
-    color: #333B41;
-}
-
-p.subtitle {
-    margin: 0;
-    padding-top: 32px;
-    padding-bottom: 26px;
+    padding: 32px 0 0 99px;
     font-size: 24px;
     line-height: 120%;
     color: #333B41;
@@ -45,6 +37,13 @@ p.subtitle {
 
 .subtext {
     font-weight: 500;
+    margin: 0;
+    padding: 38px 0 0 99px;
+    color: #333B41;
+}
+
+#pick-feed-p3 {
+    padding: 10px 190px 0 99px;
 }
 
 .pick-feed__text > h3 {
@@ -119,16 +118,18 @@ p.subtitle {
         padding-top: 28px;
     }
 
-    .pick-feed__text > p {
-        padding-top: 10px;
-        padding-left: 49px;
+    .subtitle {
+        padding: 22px 0 0 49px;
     }
 
-    p.subtitle {
-        padding-top: 22px;
-        padding-bottom: 4px;
+    .subtext {
+        padding: 18px 77px 0 49px;
     }
     
+    #pick-feed-p3 {
+        padding: 8px 30px 0 49px;
+    }
+
     .pick-feed__text > h3 {
         padding: 38px 0 40px;
         margin: 0;
@@ -166,14 +167,17 @@ p.subtitle {
         font-size: 4.2rem;
     }
 
-    .pick-feed__text > p {
-        padding-left: 18px;
+    .subtitle {
+        padding: 20px 0 0 20px;
+        font-size: 2.2rem;
     }
 
-    p.subtitle {
-        padding-top: 18px;
-        padding-bottom: 9px;
-        font-size: 2.2rem;
+    .subtext {
+        padding: 17px 30px 0 20px;
+    }
+    
+    #pick-feed-p3 {
+        padding: 9px 10px 0 20px;
     }
 
     .pick-feed__text > h3 {
@@ -182,7 +186,7 @@ p.subtitle {
     }
 
     .step__card {
-        width: 25vw;
+        width: 161px;
     }
 
     .button_feed {
@@ -191,14 +195,14 @@ p.subtitle {
     }
 
     .step__arrow {
-        width: 42px;
+        width: 44px;
         height: 0;
     }
 
     .step__arrow-img {
         width: 89px;
         height: 29px;
-        margin-top: -5px;
+        margin-left: -25px;
         z-index: 2;
         content: url(../../assets/images/arrow2.png);
     }
@@ -227,6 +231,10 @@ p.subtitle {
 
     .step__arrow-img {
         margin: -80px 10px 0 0;
+    }
+
+    #arrow-last {
+        margin: -80px 16px 0 0;
     }
 
     .pick-feed__text > h2 {

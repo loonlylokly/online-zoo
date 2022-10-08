@@ -397,6 +397,10 @@
         margin-left: 10px;
         margin-right: 2px;
     }
+
+    .footer__navbar-menu {
+        padding-left: 1vw;
+    }
 }
 
 @media (max-width: 760px) {
@@ -526,6 +530,10 @@
 
     #donate-p3 {
         padding-left: 2px;
+    }
+
+    .footer__navbar-menu {
+        padding-left: 0.5vw;
     }
 }
 

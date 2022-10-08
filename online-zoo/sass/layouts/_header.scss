@@ -31,7 +31,7 @@
 
 .navbar-menu__link {
     list-style: none;
-    padding: 0 1.875vw;
+    padding: 0 1.8vw;
 }
 
 .navbar-menu__link:first-of-type {
@@ -47,6 +47,10 @@
     line-height: 140%;
 }
 
+#navbar-menu__open a {
+    color: $color-primary-hover;
+}
+
 .navbar-menu__link a:hover {
     color: $color-primary-hover;
 }
@@ -57,7 +61,7 @@
 
 @media (max-width: 1000px) {
     .navbar-menu__link {
-        padding: 0 2.4vw;
+        padding: 0 2.5vw;
     }
 }
 
