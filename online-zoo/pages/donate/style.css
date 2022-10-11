@@ -179,7 +179,7 @@ p {
     padding: 0 2.5vw;
   }
 }
-@media (max-width: 960px) {
+@media (max-width: 640px) {
   .navbar-menu {
     display: none;
   }
