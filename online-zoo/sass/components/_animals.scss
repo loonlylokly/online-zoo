@@ -9,9 +9,10 @@
                          "buttonL buttonL2 space buttonR2 buttonR"
                          "buttonL animals2 animals2 animals2 buttonR";
     grid-template-rows: 1fr 20px 1fr;
-    grid-template-columns: 102px 494px 171px 494px 102px;
+    grid-template-columns: 102px 494px 172px 494px 102px;
     justify-items: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .button-left {
@@ -42,7 +43,8 @@
     width: 100%;
     box-sizing: border-box;
     display: flex;
-    justify-content: space-between;
+    transform: translate(0px, 0px);
+    transition: 1s;
 }
 
 .animals-row2 {
@@ -53,8 +55,60 @@
     width: 100%;
     box-sizing: border-box;
     display: flex;
-    justify-content: space-between;
+    transform: translate(0px, 0px);
+    transition: 1s;
 }
+
+
+
+
+.carousel-wrapper {
+    width: 100%;
+    margin: 0 0px;
+    overflow: hidden;
+}
+
+.item, .carousel {
+    display: flex;
+}
+
+.item {
+    // margin: 0 15px; 
+}
+
+.carousel {
+    position: relative;
+    gap: 30px;
+    left: calc(-100% - 28px);
+}
+
+@keyframes move-right {
+    from {left: calc(-100% - 28px);}
+    to {left: calc(2*(-100% - 28px));}
+}
+
+.transition-right {
+    animation-name: move-right;
+    animation-duration: 5s;
+}
+
+@keyframes move-left {
+    from {left: calc(-100% - 28px);}
+    to {left: -0%;}
+}
+
+.transition-left {
+    animation-name: move-left;
+    animation-duration: 5s;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+
 
 .wrapper-animals {
     margin: auto;
@@ -237,6 +291,31 @@
     .animals-row__card__img {
         height: 29.3vw;
     }
+
+
+
+    .carousel-wrapper {
+        width: 93.6vw;
+        margin: 0 0px;
+    }
+
+    
+    .carousel {
+        left: calc(-100% - 26px);
+    }
+    
+    @keyframes move-right {
+        from {left: calc(-100% - 26px);}
+        to {left: calc(2*(-100% - 26px));}
+    }
+    
+    // @keyframes move-left {
+    //     from {left: -103.5%;}
+    //     to {left: -1.3%;}
+    // }
+    
+
+
 }
 
 
@@ -266,6 +345,31 @@
 
     .animals-row__name {
         padding-top: 5px;
+    }
+
+
+    .carousel-wrapper {
+        width: 100%;
+        margin: 0 0px;
+    }
+
+    .item {
+        padding: 0;
+        margin: 0;
+    }
+    
+    .carousel {
+        left: calc(-100% - 28px);
+    }
+    
+    @keyframes move-right {
+        from {left: calc(-100% - 28px);}
+        to {left: calc(2*(-100% - 28px));}
+    }
+    
+    @keyframes move-left {
+        from {left: calc(-100% - 28px);}
+        to {left: 0%;}
     }
 }
 
@@ -322,6 +426,46 @@
         width: 175px;
         height: 129px;
         right: 0px;
+    }
+
+    .carousel-wrapper {
+        width: 100%;
+        margin: 0 0px;
+    }
+
+    .item {
+        padding: 0;
+        margin: 0;
+    }
+    
+    .carousel {
+        left: calc(-100% - 16px);
+    }
+    
+    @keyframes move-right {
+        from {left: calc(-100% - 16px);}
+        to {left: calc(2*(-100% - 16px));}
+    }
+    
+    @keyframes move-left {
+        from {left: calc(-100% - 16px);}
+        to {left: calc(0% + 0px);}
+    }
+}
+
+@media (max-width: 640px) {
+    .carousel {
+        left: calc(-100% - 30px);
+    }
+    
+    @keyframes move-right {
+        from {left: calc(-100% - 30px);}
+        to {left: calc(2*(-100% - 30px));}
+    }
+    
+    @keyframes move-left {
+        from {left: calc(-100% - 30px);}
+        to {left: calc(0% + 0px);}
     }
 }
 
@@ -391,5 +535,19 @@
         margin-left: 12px;
         width: 27px;
         height: 37px;
+    }
+
+    .item, .carousel {
+        display: flex;
+        flex-direction: column;
+        left: 0;
+    }
+
+    .item-left {
+        display: none;
+    }
+
+    .item-right {
+        display: none;
     }
 }
